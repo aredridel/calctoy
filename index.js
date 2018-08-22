@@ -45,6 +45,22 @@ class Calc {
     sub() {
         return this.total - this.entry
     }
+
+    store() {
+        this.memory = this.display
+    }
+
+    recall() {
+        this.display = this.entry = this.memory
+    }
+
+    clear() {
+        this.display = this.entry = 0
+    }
+
+    memoryclear() {
+        this.memory = 0
+    }
 }
 
 module.exports = Calc

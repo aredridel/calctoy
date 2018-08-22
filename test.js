@@ -20,6 +20,8 @@ tape.test(t => {
     t.equal(c.entry, 12)
     t.equal(c.op, 'add')
 
+    c.store()
+
     c.operation('sub')
 
     t.equal(c.op, 'sub')
@@ -41,6 +43,12 @@ tape.test(t => {
 
     t.equal(c.total, -96)
     t.equal(c.display, -96)
+
+    c.operation('add')
+    c.recall()
+    c.sum()
+
+    t.equal(c.total, -84)
 
     t.end()
 
