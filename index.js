@@ -41,7 +41,6 @@ class Calc {
         return this.total + this.entry
     }
 
-
     sub() {
         return this.total - this.entry
     }
