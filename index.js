@@ -24,6 +24,7 @@ class Calc {
         } else {
             this.total = this.entry
         }
+        this.dirty = false
     }
 
     sum() {
@@ -33,7 +34,6 @@ class Calc {
 
     operation(op) {
         if (this.dirty || op == this.op) this.apply()
-        this.dirty = false
         this.op = op
     }
 
