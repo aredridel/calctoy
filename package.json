@@ -1,0 +1,15 @@
+{
+  "name": "te",
+  "version": "1.0.0",
+  "description": "A little calculator toy",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "Aria Stewart <aredridel@dinhe.met>",
+  "license": "ISC",
+  "dependencies": {
+    "tape": "^4.9.1"
+  },
+  "devDependencies": {}
+}
